@@ -38,3 +38,4 @@
 - git diff --cached
 - git log
 - git log --graph
+- Tag: lightweigh tag, Annotated tag
