@@ -1,1 +1,3 @@
-# framgia First tutorial to Git
+# framgia
+- Git
+- Introduction
