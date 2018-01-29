@@ -1,0 +1,19 @@
+ Chỉ định tệp rồi hiển thị nhật ký : git log --only-file foo.txt
+
+ Xem sự khác biệt giữa HEAD và stage
+git diff
+//git diff HEAD
+git diff --staged
+git diff STAGE
+
+git diff a3fbde d6aeba
+
+Hien thi nhat ki commit: git log
+xoa tep khoi stage: git rm --cached FILE
+ Xem nhật ký thao tác: git reflog
+  Nội dung của tệp stage trở về HEAD : git reset
+   Xóa nhánh work1 : git branch -d work1
+    Commit tệp staging : 
+     Xem sự khác biệt giữa HEAD và stage : git diff --staged
+      Xem sự khác biệt giữa nhánh đang làm viêc và stage : git diff STAGE
+       Xem nội dung của thay đổi: git status
