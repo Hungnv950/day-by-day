@@ -1,5 +1,5 @@
-e = [1,2,3].each   
-puts e.next   # => 1
-puts e.next   # => 2
-puts e.next   # => 3
-puts e.next   # => ?
+p a = ["one", "two", 3 ]
+p b = [1, 2, 3]
+p a<<[1,6]
+p a.flatten!
+p c = (a&b).include?(1)
