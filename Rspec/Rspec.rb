@@ -1,3 +1,9 @@
+https://github.com/eliotsykes/rspec-rails-examples
+
+include_examples "name"      # include the examples in the current context
+it_behaves_like "name"       # include the examples in a nested context
+it_should_behave_like "name" # include the examples in a nested context
+matching metadata            # include the examples in the current context
 <!--
 Rspec is a Behavior-Drivent Development tool for Ruby programers.
 "Describe an order."
@@ -105,8 +111,19 @@ RSpec.describe Hash do
   include_examples "collections", Hash
 end
 
-# A Word on Scope
+# Metadata
+it "does something" do |example|
+  expect(example.metadata[:description]).to eq("does something")
+end
 
+# described_class
+RSpec.describe Widget do
+  example do
+    expect(described_class).to equal(Widget)
+  end
+end
+
+# A Word on Scope
 RSpec.describe "Using an array as a stack" do
   def build_stack
     []
